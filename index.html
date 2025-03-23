@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-4xl font-bold">Hi, I'm Luke Anderson</h1>
+        <p class="reveal_info text-lg mt-2">Front-End Developer & UI Designer</p>
+        <a href="#projects" class="reveal_button mt-4 px-6 py-3 bg-blue-800 hover:bg-blue-900 rounded-lg text-lg">View
+            My
+            Work</a>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="max-w-2xl mx-auto text-gray-400">I'm passionate about creating beautiful and functional websites...
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Project 1</h3>
+                <p class="text-gray-400">A short description of your project.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Project 2</h3>
+                <p class="text-gray-400">A short description of your project.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Project 3</h3>
+                <p class="text-gray-400">A short description of your project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-400">Email: your@email.com</p>
+        <p class="text-gray-400">LinkedIn | GitHub | Twitter</p>
+    </section>
+    <script>
+        const slideUp = {
+            distance: '800px',
+            origin: 'bottom',
+            opacity: null,
+            duration: 800,
+            easing: 'ease',
+            opacity: '0'
+        };
+        ScrollReveal().reveal('h1', slideUp);
+        ScrollReveal().reveal('.reveal_info', { delay: 1200 }, { easing: 'ease' });
+        ScrollReveal().reveal('.reveal_button', { delay: 1600 }, { easing: 'ease' });
+    </script>
+
+</body>
+
+</html>
