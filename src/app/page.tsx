@@ -54,9 +54,9 @@ export default function Home() {
             Hi, I'm <span className="text-blue-600">Luke Anderson</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            A passionate developer specializing in web development, UX design,
-            computer networking, and security. I create innovative solutions
-            that combine technical excellence with user-centered design.
+            Passionate about technology and innovation, I'm currently pivoting
+            from web development into networking and cybersecurity, driven by
+            curiosity and a love for problem-solving.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
